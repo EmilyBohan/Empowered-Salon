@@ -1,0 +1,423 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  font-family: 'Roboto','lobster', Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color:  rgb(248, 249, 250);
+  overflow-x: hidden;
+}
+span, a {
+  font-family: "raleway";
+  font-weight: bold;
+}
+h1, h3, h4 {
+  font-family: "raleway";
+}
+header{
+  background: white;
+
+}
+main {
+  background-image: url("../photos/redhead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:  rgb(248, 249, 250);
+  min-height: 700px;
+  
+  margin-bottom: 2%;
+}
+.mPadding {
+  padding-top: 10%;
+}
+main > * {
+  margin-left: 10%;
+}
+.nav-list {
+  margin: 0;
+}
+.nav-list > li a {
+  text-decoration: none;
+  color: black;
+}
+li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+.nav-h3{
+  min-height: 0;
+  align-items: start;
+  margin: 0;
+}
+.nav-h3 > h3 {
+  font-family: "Lobster";
+  margin: 0;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+nav {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.bookonline {
+  align-items: end;
+  justify-content: end;
+}
+.bookonline a {
+  color: black;
+  text-decoration: none;
+}
+
+/******************************************
+/* Main
+/*******************************************/
+.main1 {
+  margin-bottom: 2%;
+}
+main > div, .main1 > p {
+  color: white;
+}
+
+main div > h1 {
+  font-size: 100px;
+  letter-spacing: 15px;
+  vertical-align: top;
+  text-align: start;
+  margin: 0%;
+}
+.main1 > p {
+  word-spacing: 10px;
+  font-size: 20px;
+}
+.main1 > a {
+  width: 10%;
+  height: 100px;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: 13px;
+}
+.main2 {
+  background-color: black;
+  color: white;
+  width: 15%;
+  height: 35%;
+  padding: 10px;
+}
+.main2 > p span {
+  font-size: 25px;
+  font-weight: 100;
+}
+.main2 > span {
+  border-left: 4px solid white;
+  padding-left: 14px;
+}
+.main2 > a {
+  display: inline-block;
+  color: black;
+  background-color: white;
+  font-size: 12px;
+  padding: 4px;
+  margin-left: 10%;
+  border: 2px solid black;
+  text-decoration: none;
+}
+
+/******************************************
+/* Services
+/*******************************************/
+.services {
+  display: flex;
+  text-align: center;
+  min-width: 1270px;
+  margin: 40px 0 40px;
+}
+.services div > span {
+  display: block;
+  padding-top: 5%;
+  font-size: larger;
+  font-weight: bold;
+}
+.services div > p {
+  font-size: small;
+  padding: 0 70px 0;
+}
+.servicelogos {
+  width: 140px;
+  height: 120px;
+}
+
+/******************************************
+/* yourown
+/*******************************************/
+.yourOwn {
+  min-width: 1200px;
+  display: flex;
+  text-align: center;
+  padding: 20px;
+  background-image: linear-gradient(rgba(240, 204, 223, 0), rgba(240, 204, 223, 0.682),rgba(240, 204, 223, 0));
+}
+.yourOwn > section {
+  margin-top: 6%;
+  padding-bottom: 5%;
+}
+.yourOwn p {
+  padding: 0 90px 0;
+  font-size: small;
+}
+.yourOwn h3 {
+  width: 40%;
+  text-align: left;
+  margin-left: 35%;
+  line-height: 1.5;
+  font-size: 30px;
+}
+.yourOwn a {
+  margin-right: 40px;
+  font-size: 12px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  text-decoration: none;
+}
+.yourOwnImage {
+ width: 40%;
+ margin-left: 70px;
+}
+/******************************************
+/* Gallery1
+/*******************************************/
+.gallery1 {
+  width: 100%;
+  min-width: 700px;
+  display: flex;
+  background-color:  rgb(248, 249, 250);
+  justify-content: space-evenly;
+  padding-top: 100px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  
+  /* - to wrap when no space is remaining */
+/*   padding: 10% 0 30%;
+  margin-bottom: 15%;
+  margin-left: 21%; */ /*- none of this is required */
+}
+.gallery1 > div {
+/*   width: 22%; */ /*When using flex, container widths are usually not required*/
+/*   height: 200px; */ /*Highly advised not to use heights. Or use min-height. With the height, it breaks*/
+  text-align: center;
+}
+.gallery1 > div figure{
+  display: block;
+  margin: 0;
+}
+.gallery2 {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+.gallery1 div > span {
+  display: block;
+  margin-top: 20px;
+}
+.gallerya {
+  font-size: 12px;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  text-decoration: none;
+  margin-bottom: 100px;
+}
+/******************************************
+/* colorday
+/*******************************************/
+.colorday {
+  max-width: 600px;
+  min-height: 300px;
+  background-image: url(https://images.fresha.com/locations/location-profile-images/18635/285009/d40ba84a-447d-445f-9f50-e27d1750d75a.jpg?class=fallback);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color:  rgb(248, 249, 250);
+  position: relative;
+  margin: 0 auto;
+}
+.bookApp {
+  background-image: linear-gradient(rgba(240, 204, 223, 0), rgba(240, 204, 223, 0.682));
+}
+.colorday > div {
+  position: absolute;
+  top: 30px;
+  left: 50px
+}
+
+.colorday span,
+.colorday h4, 
+.colorday a {
+  color: white;
+}
+
+.colorday a {
+  font-size: 12px;
+  padding: 4px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  text-decoration: none;
+}
+/******************************************
+/* lookbook
+/*******************************************/
+.lookbook {
+  width: 100%;
+  min-height: 500px;
+  padding-top: 30px;
+  text-align: center;
+  background-image: linear-gradient(rgba(240, 204, 223, 0.682),rgba(240, 204, 223, 0.189));
+}
+.lookbook > h3 {
+  font-size: 25px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 8px;
+  justify-content: center;
+}
+.column {
+  max-width: 200px;
+  padding: 0 6px;
+}
+
+.column img {
+  max-width: 100%;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+@media only screen and (max-width: 700px) {
+  body {
+    font-size: 14px;
+  }
+
+  main {
+    min-height: 500px;
+  }
+
+  .main1 > a {
+    width: 100%;
+  }
+
+  .main2 {
+    max-width: 60%
+  }
+
+  .main2 > span,
+  .main2 > p span {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .main2 > a {
+    margin-left: 0;
+  }
+
+  .services {
+    flex-direction: column;
+    text-align: center;
+    
+  }
+
+  .services div {
+    margin-bottom: 20px;
+    align-content: center;
+    max-width: fit-content;
+  }
+
+  .yourown {
+    flex-direction: column;
+    text-align: center;
+
+  }
+
+  .yourown h3 {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    max-width: fit-content;
+  }
+  .yourown section {
+    width: 100%;
+    text-align: center;
+  }
+  .yourown img {
+    display: none;
+  }
+
+  .gallery1 {
+    padding-top: 50px;
+    align-items: center;
+  }
+
+  .gallery1 > div {
+    width: 100%;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .gallery2{
+    align-content: center;
+  }
+
+  .lookbook > h3 {
+    font-size: 20px;
+  }
+
+  .row {
+    padding: 0;
+    
+  }
+
+  .column {
+    max-width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .column img {
+    max-width: 50%; /* Adjusted max-width for smaller images */
+  }
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
